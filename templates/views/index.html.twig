@@ -1,0 +1,65 @@
+{% extends "layout.html.twig" %}
+
+{% block header %}
+		<link href="../style/style.css"  type="text/css" rel="Stylesheet"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../javascript/registryUser.js"></script>
+        <meta charset="UTF-8">
+{% endblock %}
+{% block slider %}
+	<article id="slideshow-wrap">
+    <input type="radio" id="button-1" name="controls"  checked="checked" />
+    <label for="button-1"></label>
+    <input type="radio" id="button-2" name="controls" />
+    <label for="button-2"></label>
+    <input type="radio" id="button-3" name="controls"/>
+    <label for="button-3"></label>
+    <input type="radio" id="button-4" name="controls"/>
+    <label for="button-4"></label>
+    <input type="radio" id="button-5" name="controls"/>
+    <label for="button-5"></label>
+
+    <figure id="slideshow-inner">
+        <ul>
+            <li id="slide1">
+                <img src="../images/wither.jpg" />
+            </li>
+            <li id="slide2">
+                <img src="../images/whiter2.jpg" />
+            </li>
+            <li id="slide3">
+                <img src="http://cssdeck.com/uploads/media/items/0/00kih8g.jpg" />
+            </li>
+            <li id="slide4">
+                <img src="http://cssdeck.com/uploads/media/items/2/2rT2vdx.jpg" />
+            </li>
+            <li id="slide5">
+                <img src="http://cssdeck.com/uploads/media/items/8/8k3N3EL.jpg" />\
+            </li>
+        </ul>
+    </figure>
+</article>
+{% endblock %}
+	
+{% block main %}
+	<main class="main">
+    <br>
+    <h1> BESTSELLER {{imie}} </h1>
+	{{ a }} 
+    <br>
+    <figure class="miniatures">
+        <a href="#">
+            <img src="../images/gta5.jpg"/>
+        </a>
+        <img src="../images/x360.png"/>
+        <img src="../images/ps3.png"/>
+        <p>
+            Grand Theft Auto V
+            Edycja Kolekcjonerska
+		
+        </p>
+    </figure>
+
+    <a href="#"> <nav class="registryButton"> </nav></a>
+	</main>
+{% endblock %}

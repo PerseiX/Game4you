@@ -1,0 +1,34 @@
+{% extends "layout.html.twig" %}
+
+{% block header %}
+	    <link href="../style/registry.css"  type="text/css" rel="Stylesheet"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../javascript/registryUser.js"></script>
+        <meta charset="UTF-8">		
+{% endblock %}
+
+
+{% block main %}
+	 <main class="main">
+		<br>
+		   <h1> ~ZALOGUJ~ </h1>
+		<br>
+			<input type="text" maxlength="25" placeholder="Login" name="logins" id="logins" />
+			<input type="password" maxlength="25" placeholder="Hasło" name="passwords" id="passwords"/>
+				 	<p id="loginComunicat"></p>
+			<button class="loginButton"></button>
+		<br>
+			<h1 class="title"> ~REJESTRACJA~ </h1>
+		<br>
+		
+	   {{a}}
+			<input id="email" type="email" maxlength="25" placeholder="E-mail" name="email" /><img  id="status"  src="" />
+			<input id="login" type="text" maxlength="25" placeholder="Login" name="login" /><img id="status2"  src="" />
+			<input id="password" type="password" maxlength="25" placeholder="Hasło" name="password" /><img id="status3"  src="" />
+			<input id="passwordRepeat" type="password" maxlength="25" placeholder="Powtórz Hasło" name="passwordRepeat" /><img id="status4"  src="" />
+				<p id="registryComunicat"></p>
+			<button class="registryButton"></button>
+
+	</main>
+{% endblock %}
+

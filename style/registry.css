@@ -1,0 +1,314 @@
+body{
+	margin: 0px auto;
+    background: url(../images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+@font-face {
+    font-family: kozuca;
+    src: url(../extension/KozGoPr6N-ExtraLight.otf);
+}
+#loginout:hover{
+    background-color: #0066CC;
+	opacity: 0.6;
+}
+
+
+@font-face {
+    font-family: tcmi;
+    src: url(../extension/TCMI____.TTF);
+}
+.header{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment:fixed;
+    z-index: 1;
+    margin: 0 auto;
+    height: 104px;
+    width: 980px;
+}
+
+#logo{
+    z-index: 3;
+    width: 70px;
+    height: 41px;
+    float: left;
+    padding: 8px;
+    position: fixed;
+}
+
+input#search{
+    z-index: 3;
+    width: 250px;
+    height: 35px;
+    position: fixed;
+    margin-left: 645px;
+    margin-top: 10px;
+    border: 1px solid #00457b;
+    padding: 5px;
+    background-image: url("../images/lupa.png");
+    background-repeat: no-repeat;
+    text-indent: 30px;
+    background-position: 3px;
+}
+
+.main{
+    z-index: 0;
+    margin: 0 auto;
+    width: 970px;
+    height: 980px;
+	margin-top: 165px;
+    background-color: white;
+    border: 5px solid #0090ff;
+    padding-bottom: 70px;
+}
+
+footer{
+    margin: 0 auto;
+    margin-top: 10px;
+    background: url(../images/stopka.png);
+    width:980px;
+    height: 100px;
+    margin-bottom: 30px;
+
+}
+.menu{
+    /*margin-right: 10px;*/
+    background: url(../images/header.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 980px;
+    height: 104px;
+    z-index: 2;
+    position: fixed;
+    /*float: left;*/
+    padding-top: 54px;
+}
+
+a[href*="Shopping"] {
+    margin-left: 900px ;
+    position: fixed;
+    z-index: 10;
+}
+
+
+img[src*="przerwa"]{
+    vertical-align: middle
+}
+
+.menu a{
+    z-index: 3;
+    font-size: 22px;
+    font-family: tcmi;
+    color: white;
+    vertical-align: middle;
+    display: inline;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 16px;
+}
+
+a[href*="NavigationXBOX"]:hover {
+    background-color: #117d10;
+    
+}
+
+a[href*="NavigationPS"]:hover {
+    background-color: #0072bb;
+}
+
+a[href*="NavigationSPRZ"]:hover {
+    background-color: darkblue;
+}
+
+a[href*="NavigationGAD"]:hover {
+    background-color: darkblue;
+}
+
+a[href*="NavigationPC"]:hover {
+    background-color: orange;
+}
+
+input[type="password"]{
+    font-family: tcmi;
+    padding-left: 5px;
+    color: #0072bb;
+    font-size: 28px;
+    height: 42px;
+    width: 450px;
+    border: 1px solid #0072bb;
+    margin: 10px;
+    margin-left: 250px;
+	
+}
+
+input[type="text"]{
+    font-family: tcmi;
+    padding-left: 5px;
+    color: #0072bb;
+    font-size: 28px;
+    height: 42px;
+    width: 450px;
+    border: 1px solid #0072bb;
+    margin: 10px;
+    margin-left: 250px;
+	
+}
+input[type="email"]{
+    font-family: tcmi;
+    padding-left: 5px;
+    color: #0072bb;
+    font-size: 28px;
+    height: 42px;
+    width: 450px;
+    border: 1px solid #0072bb;
+    margin: 10px;
+    margin-left: 250px;
+}
+
+input[class="loginButton"]{
+    display: block;
+	width:159px;
+    height:51px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+input[class="registryButton"] {
+    display: block;
+	width:193px;
+    height:51px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom:30px;
+}
+
+.loginButton{
+	
+	/*outline: none;*/
+    /*background: url(../images/buttup.png);*/
+	/*border: 0px;	*/
+	position: abolute;
+    display: block;
+    margin-left: 380px;
+    margin-top: 90px;
+    text-decoration: none;
+    width:159px;
+    height: 51px;
+    outline: none;
+    background: url(../images/buttup.png);
+    border: 0px;
+    /*position: absolute;*/
+
+
+}
+#loginout{
+    font-family: tcmi;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    position: fixed;
+    padding-top: 0px;
+    margin-left: 500px;
+    z-index: 3;
+    font-size: 22px;
+    color: white;
+    vertical-align: middle;
+    display: inline;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+}
+.loginButton:hover{
+	
+	 outline:none; 
+	 border: 0px;
+     background: url(../images/buttdown.png);
+     
+ }
+
+.registryButton{
+	display: block;
+	margin-left: 380px;
+	margin-top: 90px;
+	text-decoration: none;
+	width:193px; 
+	height: 51px;
+	outline: none;
+    background: url(../images/regup.png);
+	border: 0px;
+	position: absolute;	
+}
+
+.registryButton:hover{
+	text-decoration: none;
+	width:193px; 
+	height: 51px;
+	outline: none;
+	border: 0px;
+    background: url(../images/regdown.png);
+	
+}
+
+h1{
+    color:  #0090ff;
+    font-family: kozuca;
+	text-align: center;
+}
+.title{
+    margin-top: 30px;
+}
+
+.errors{
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+	border: 2px solid red;
+	color: red;
+	width: 300px;
+}
+
+#registryComunicat{
+    font-weight: bold;
+    display: block;
+    margin-left: 350px;
+    color:  #0090ff;
+    font-family: kozuca;
+    font-size: 25px;
+    position: absolute;
+}
+
+#loginComunicat{
+    font-weight: bold;
+    display: block;
+    margin-left: 350px;
+    color:   #0090ff;
+    font-family: kozuca;
+    font-size: 25px;
+    position: absolute;
+	z-index: 103;
+}
+
+
+#loginout{
+    font-family: tcmi;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    position: fixed;
+    padding-top: 0px;
+    margin-left: 500px;
+    z-index: 3;
+    font-size: 22px;
+    color: white;
+    vertical-align: middle;
+    display: inline;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+}

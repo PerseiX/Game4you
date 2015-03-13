@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+	
+    <head>
+	{% block header %} 
+	{% endblock %}
+           <title> GAME4YOU </title>
+    </head>
+
+<body>
+	<header class="header">
+		<a href="../web/index.php">
+			<img id="logo" src="../images/g4u.png"/>
+		</a>
+	
+			{% if successLogOut is defined %}
+				<span style="position: absolute; z-index: 102; font-family: kozuca; margin-left: 300px; color: red; font-size: 20px;"> 	
+					Wylogowano z konta
+				</span>
+			{% endif %}
+			{% if logged == false %}		
+			<a id="loginout" href="../src/Controller.php?module=user&action=showForm">  Zaloguj<br>Zarejestruj </a>
+			{% else %}
+			<a id="loginout" href="../src/Controller.php?module=user&action=logOut"> 	Wyloguj<br> {{login}} </a>
+			{% endif %}
+	
+		<input id="search" type="search" />
+		<a href="Shopping"><img src="../images/shopping.png" /></a>
+		<nav class="menu">
+			<a href="../web/index.php?pc" >  PC </a>
+			<img  src="../images/przerwa.png"  />
+			<a href="NavigationPS4.php"> PS4</a>
+			<img src="../images/przerwa.png" />
+			<a href="NavigationPS3.php"> PS3</a>
+			<img src="../images/przerwa.png" />
+			<a href="NavigationXBOX.php"> XBOX ONE</a>
+			<img src="../images/przerwa.png" />
+			<a href="NavigationXBOX.php"> XBOX 360</a>
+			<img src="../images/przerwa.png" />
+			<a href="NavigationPSP.php"> PSP PS VITA</a>
+			<img src="../images/przerwa.png" />
+			<a href="../NavigationGADZET.php"> GADŻETY</a>
+			<img src="../images/przerwa.png" />
+			<a href="NavigationSPRZET.php"> SPRZĘT</a>
+			<img  src="../images/przerwa.png"  />
+		</nav>
+	</header>
+	{% block body %}
+	{% endblock %}
+
+
+	{% block slider %}
+	{% endblock %}
+
+	
+	{% block main %}
+	{%  endblock %}
+	</main>
+	<footer>
+	{% block footer %}
+	{% endblock %}
+	</footer>
+</body>
+</html>
